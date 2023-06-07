@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "my-beloved-icon",
+  "version": "${version}",
+  "name": "my-beloved-icon",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/mooziii/my-beloved-icon"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/my-beloved-icon/my-beloved-icon.png",
+  "environment": "client",
+  "mixins": [
+    "my-beloved-icon.mixins.json"
+  ],
+  "depends": {
+    "fabric-resource-loader-v0": "*",
+    "minecraft": ">=1.20"
+  }
+}

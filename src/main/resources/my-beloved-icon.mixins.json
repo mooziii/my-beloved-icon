@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.eumel.mybelovedicon",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "MixinIconSet",
+    "MixinMinecraft"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
