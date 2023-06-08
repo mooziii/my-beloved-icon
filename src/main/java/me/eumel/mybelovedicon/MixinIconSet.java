@@ -15,7 +15,7 @@ import java.io.InputStream;
 @Mixin(IconSet.class)
 public class MixinIconSet {
     @Inject(method = "getFile", at = @At("RETURN"), locals = LocalCapture.CAPTURE_FAILHARD, cancellable = true)
-    private void method_51419(PackResources packResources, String string, CallbackInfoReturnable<IoSupplier<InputStream>> cir, String[] strings, IoSupplier<InputStream> ioSupplier) {
+    private void returnBetterFile(PackResources packResources, String string, CallbackInfoReturnable<IoSupplier<InputStream>> cir, String[] strings, IoSupplier<InputStream> ioSupplier) {
         cir.setReturnValue(() -> Minecraft.getInstance().getResourceManager().getResourceOrThrow(new ResourceLocation("my-beloved-icon", string)).open());
     }
 }
